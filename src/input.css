@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hover-line {
+    --thickness: 1.5px;
+    background-image: linear-gradient(180deg, currentColor 0, currentColor 98%);
+    background-position: left 95%;
+    background-repeat: no-repeat;
+    background-size: 0 2.5px;
+    background-size: 0 var(--thickness);
+    transition: background-size 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    &:hover {
+      background-size: 100% 2.5px;
+      background-size: 100% var(--thickness);
+    }
+  }
+
+  .btn-grow {
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.09); /* Aumenta o tamanho em 5% no hover */
+    }
+  }
+
+  .btn-grow-mobile {
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.03); /* Aumenta o tamanho em 5% no hover */
+    }
+  }
+
+  .delayed-border-t {
+    transition-delay: 0.2s; /* Atraso de 0.2 segundos */
+    border-top-width: 3px; /* Largura da borda superior */
+  }
+
+  .animate-menu {
+    animation: show-up 0.5s forwards;
+  }
+
+  /* Estilize os dots padrão do Slick */
+  .slider-testimonial .slick-dots {
+    display: flex !important;
+    justify-content: center !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin-top: 40px;
+  }
+
+  .slider-testimonial .slick-dots li {
+    margin: 0 5px !important; /* Ajuste o espaçamento entre os dots conforme necessário */
+    position: relative !important;
+  }
+
+  /* Crie os dots redondos usando pseudo-elementos */
+  .slider-testimonial .slick-dots li::before {
+    content: "" !important;
+    width: 13px !important; /* Defina a largura desejada para os dots */
+    height: 13px !important; /* Defina a altura desejada para os dots */
+    border: 1px solid black;
+    border-radius: 50% !important; /* Torna os dots redondos */
+    background-color: #fff !important; /* Defina a cor de fundo dos dots */
+    display: block !important;
+    transition: background-color 0.3s ease !important; /* Adicione uma transição para animações */
+  }
+
+  /* Estilize o dot ativo */
+  .slider-testimonial .slick-dots li.slick-active::before {
+    background-color: rgb(
+      14 41 84
+    ) !important; /* Defina a cor de fundo do dot ativo */
+  }
+
+  /* Oculta os números que representam os itens do slider */
+  .slider-testimonial .slick-dots li button {
+    font-size: 0; /* Define o tamanho da fonte para zero */
+    line-height: 0; /* Define a altura da linha para zero */
+    transition: background-color 0.3s ease; /* Adicione uma transição para animações */
+  }
+
+  .whatsapp-btn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+  }
+
+  .js-accordion dt.cor-ativo {
+    background-color: #769fcd;
+    transition-duration: 700ms;
+    color: #fbfbfb;
+  }
+
+  .js-accordion dd.ativo {
+    display: block;
+    animation: slideDown 700ms ease-in-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      max-height: 0;
+      margin-top: 0;
+    }
+    to {
+      max-height: 300px;
+      opacity: 1;
+      margin-top: 16px;
+    }
+  }
+
+  .js-accordion dd.inativo {
+    overflow: hidden; /* Hide overflowing content */
+    animation: slideUp 900ms ease-in-out;
+    animation-fill-mode: forwards; /* Keep the final state of the animation */
+  }
+
+  @keyframes slideUp {
+    from {
+      max-height: 300px; /* Start with the desired height */
+      margin-top: 16px;
+      padding-bottom: 12px;
+    }
+    to {
+      max-height: 0; /* Collapse to a height of 0 */
+      margin-top: 0px;
+      padding-bottom: 0px;
+    }
+  }
+}

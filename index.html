@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0NZ4TV4R0"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E0NZ4TV4R0');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psicologo Heitor Lemos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist\output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="src/img/psychology.png" sizes="32x32">
+</head>
+<body class="bg-primary-white antialiased">
+  <header class="bg-primary-white shadow-md fixed w-full z-50">
+    <div class="max-w-95% tablet:mx-auto py-2 text-primary-navy"> <!-- header container -->
+      <div class="flex items-center justify-between"> <!--flex header-->
+        <div class="flex items-center">
+          <div class="block tablet:mx-auto tablet:flex-grow laptop:flex-grow-0 laptop:mx-0 laptop:mr-0">
+            <div class="ml-2 mr-2 inline-block scroll-js">
+              <a href="#home"><img class="inline-block max-w-40px h-auto" src="./src/img/psychology.png" alt=""></a>
+            </div>
+          </div>
+          <div class="text-center mx-0 tablet:flex-grow laptop:ml-0 laptop:mr-10 laptop:flex-grow-0 scroll-js">
+            <a href="#home">
+              <h1 class="font-primary-title text-3xl tablet:text-4xl font-bold uppercase tracking-tighter">Heitor Lemos</h1>
+            </a>
+          </div>
+        </div>
+        <div id="dropdown" class="ml-5 justify-self-end flex-grow text-end laptop:hidden">
+          <i class="fa-solid fa-bars fa-2xl" style="color: #001b4b;"></i>
+        </div>
+        <div class="hidden laptop:block">
+          <nav class="flex font-primary-sans scroll-js">
+            <ul class="">
+              <li class="laptop:px-2 desktop:px-5 py-3 font-medium text-2xl text-primary-navy hover:text-primary-grape transition duration-500">
+                <a class="hover-line" href="#sobre">Sobre</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="laptop:px-2 desktop:px-5 py-3 font-medium text-2xl text-primary-navy hover:text-primary-grape transition duration-500">
+                <a class="hover-line" href="#psicoterapia">Psicoterapia</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="laptop:px-2 desktop:px-5 py-3 font-medium text-2xl text-primary-navy hover:text-primary-grape transition duration-500">
+                <a class="hover-line" href="#depoimentos">Depoimentos</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="laptop:px-2 desktop:px-5 py-3 font-medium text-2xl text-primary-navy hover:text-primary-grape transition duration-500">
+                <a class="hover-line" href="#duvidas">Dúvidas </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hidden laptop:block bg-primary-sky ml-2 text-2xl px-4 py-2 rounded-full border-1 border-black border-opacity-20 font-primary-sans btn-grow font-medium hover:text-primary-white hover:bg-primary-darkblue transition duration-500">
+          <button><a href="https://wa.me/5517981092958?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta." target="_blank">Agende sua Consulta<i class="fa-brands fa-whatsapp fa-shake ml-3"></i></a></button>
+        </div>
+      </div>
+      <div>
+          <ul id="menu" class="absolute text-2xl bg-primary-white text-primary-dropdown tracking-wide mt-2 border border-primary-gray border-t-primary-grape border-t-3px shadow-md z-50 w-90% left-half -translate-x-50% p-5% hidden scroll-js">
+            <li class="py-10px px-5% border-b border-primary-gray hover:bg-bg-dropdown hover:text-secondary-dropdown transition duration-300">
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li class="py-10px px-5% border-b border-primary-gray hover:bg-bg-dropdown hover:text-secondary-dropdown transition duration-300">
+              <a href="#psicoterapia">Psicoterapia</a>
+            </li>
+            <li class="py-10px px-5% border-b border-primary-gray hover:bg-bg-dropdown hover:text-secondary-dropdown transition duration-300">
+              <a href="#depoimentos">Depoimentos</a>
+            </li>
+            <li class="py-10px px-5% border-b border-primary-gray hover:bg-bg-dropdown hover:text-secondary-dropdown transition duration-300">
+              <a href="#duvidas">Dúvidas</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="relative">
+    <div id="home" class="w-full">
+      <div class="absolute hidden mb-2 laptop:block laptop:w-full laptop:h-250px mt-10 mx-auto bg-opacity-10">
+        <img src="src/img/bg-head.svg" alt="" class="max-w-1000px mx-auto">
+      </div>
+    </div>
+    <div class="max-w-80% mx-auto"> <!-- main container -->
+      <article class="grid laptop:grid-cols-2 pt-40 laptop:pt-500px bg-primary-white">
+          <div id="sobre"  class="laptop:order-2">
+            <div  class="relative z-40 max-w-86% desktop:max-w-76% shadow-lg rounded-2xl laptop:mx-auto laptop:mt-24 bg-primary-white mx-auto">
+              <img class="rounded-2xl w-full mx-auto" src="src/img/psico-heitorlemos.png" alt="" class="mx-auto bg-primary-white">
+            </div>
+            <div class="text-center mt-8 font-primary-title text-lg relative z-40">
+              <p class=""><i class="fa-solid fa-book mr-2 text-xl" style="color: #0e2954;"></i>Graduado em Psicologia</p>
+              <p class="mt-4"><i class="fa-solid fa-book mr-2 text-xl" style="color: #0e2954;"></i>Pós-graduando em Psicologia Analítica</p>
+            </div>
+            <span class="before:absolute before:bg-maosdadas before:bg-no-repeat before:bg-cover before:bg-center before:w-full before:h-675px before:top-0 before:-left-half before:translate-x-2/4 z-0 before:laptop:hidden"></span>
+            <span class="before:absolute before:bg-primary-white before:bg-no-repeat before:bg-cover before:bg-opacity-80 before:bg-center before:w-full before:h-675px before:top-0 before:-left-half before:translate-x-2/4 z-0 before:laptop:hidden"></span>
+          </div>
+          <div class="laptop:order-1 flex laptop:mt-10">
+            <div class="text-primary-nav">
+              <div class="relative z-40 laptop:bg-opacity-70 laptop:px-5 laptop:py-5 laptop:rounded-l-xl">
+                <div class="text-40px font-primary-title font-medium pt-8 inline-block tablet:text-5xl">
+                  <h1>Heitor M. Lemos</h1>
+                </div>
+                <hr class="w-20% mx-32 border-2 border-primary-navy mt-8 rounded-full laptop:mx-32">
+                <div class="mt-14 mr-3% laptop:max-w-82.52% text-xl laptop:text-2xl desktop:text-3xl font-bold tracking-widecustom leading-150% font-primary-title laptop:leading-10 desktop:leading-12">
+                  <p class="">Psicólogo clínico, realizo atendimentos Online em todo Brasil. Utilizo dos conhecimentos da psicologia analítica para promover um atendimento que tem o potencial de te auxiliar nas dificuldades, sejam elas práticas, sentimentais ou intelectuais.</p>
+                  <p class="pt-4">Se você busca um espaço acolhedor e sem julgamentos, para falar sobre suas angústias, medos, preocupações, tudo o que achar necessário e em sigilo, você encontrou.</p>
+                </div>
+              </div>
+              <span class="before:hidden before:laptop:hidden before:absolute before:bg-primary-white before:bg-opacity-80 before:bg-no-repeat before:w-9/12 before:h-675px  before:top-0 before:-left-52 before:z-10 before:rounded-r-3xl"></span>
+              <span class="before:hidden before:laptop:hidden before:absolute before:bg-maosdadas before:bg-no-repeat before:bg-cover before:bg-left-top before:w-9/12 before:h-675px before:top-0 before:-left-52 z-0 before:rounded-r-3xl"></span>
+          </div>
+         </div>
+        </article>
+        <div class="text-center -ml-5 mt-10 laptop:text-start laptop:mx-106.5px">
+          <button id="psicoterapia" class="px-5 py-4 text-2xl btn-grow rounded-full bg-primary-sky z-40 relative inline-block font-sans hover:bg-primary-darkblue hover:text-primary-white transition duration-500 font-medium border-1 border-black border-opacity-20 drop-shadow-xl">
+            <a href="https://wa.me/5517981092958?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta.">Mais informações<i class="fa-brands fa-whatsapp fa-shake ml-3"></i></a>
+          </button>
+        </div>
+        <article class="mt-20 desktop:mt-44 laptop:px-5 laptop:py-5"> <!-- article sobre psicoterapia-->
+          <div>
+            <div class="font-primary-title text-40px font-medium tracking-widecustom text-primary-navy mx-auto inline-block tablet:text-5xl">
+              <h2 class="">A Psicoterapia</h2>
+            </div>
+            <hr class="w-20% mx-32 border-2 border-primary-navy mt-8 rounded-full">
+            <div class="mt-12 mr-3% text-xl laptop:text-2xl desktop:text-3xl font laptop:max-w-80% tracking-widecustom leading-150% font-primary-sans laptop:leading-10 desktop:leading-12">
+              <p class="">A terapia junguiana é baseada nas ideias de Carl G. Jung, e também é conhecida como Psicologia Analítica. Tem como característica principal integrar aspectos inconscientes à consciência, com o objetivo de proporcionar equilíbrio e bem-estar ao indivíduo, ajudando o paciente a viver de acordo com o que ele realmente é e resgatar a sua essência.</p>
+              <p class="pt-4">Meu objetivo é realizar um atendimento que proporcione as ferramentas necessárias para lidar com essas questões difíceis da nossa vida e que se tornam mais difíceis ainda quando temos que encará-las sozinhos. Juntos conseguiremos aumentar a sua qualidade de vida e bem-estar.</p>
+            </div>
+          </div>
+        </article>
+    </div>    
+    <div id="especialidades" class="py-10 bg-especialidades-bg bg-contain tablet:bg-fixed mt-14 laptop:mt-28"> 
+      <div class="tablet:text-center max-w-80% mx-auto text-center laptop:max-w-90%">
+        <div class="">
+          <div class="font-primary-title text-3xl tablet:text-6xl font-medium tracking-widecustom text-primary-navy  mx-auto">
+            <h2>Especialidades</h2>
+          </div>
+          <div class="pt-8 font-primary-serif font-bold text-lg text-primary-navy tablet:mx-auto max-w-md mx-auto laptop:max-w-full">
+            <ul class="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 place-items-center laptop:text-2xl font-primary-serif text-start laptop:ml-3% laptop:mr-3% laptop:place-items-center">
+              <div>
+                <img src="src/img/depressao.svg" alt="" class="w-80 h-60">
+                <li class="py-1 tablet:flex justify-self-center text-center justify-center"><i class="fa-regular fa-circle-check fa-beat text-sm pb-5 mr-4 tablet:ml-2 tablet:mt-1 laptop:mt-2.5 text-primary-navy"></i>Depressão</li>
+              </div>
+              <div>
+                <img src="src/img/ansiedade.svg" alt="" class="w-80 h-60">
+                <li class="py-1 tablet:flex justify-self-center text-center justify-center"><i class="fa-regular fa-circle-check fa-beat text-sm pb-5 mr-4 tablet:ml-2 tablet:mt-1 laptop:mt-2.5 text-primary-navy"></i>Ansiedade</li>
+              </div>
+              <div>
+                <img src="src/img/traumas.svg" alt="" class="w-80 h-60">
+                <li class="py-1 tablet:flex justify-self-center text-center justify-center"><i class="fa-regular fa-circle-check fa-beat text-sm pb-5 mr-4 tablet:ml-2 tablet:mt-1 laptop:mt-2.5 text-primary-navy"></i>Traumas</li>
+              </div>
+              <div>
+                <img src="src/img/sindromedopanico.svg" alt="" class="w-80 h-60">
+                <li class="py-1 tablet:flex justify-self-center text-center justify-center"><i class="fa-regular fa-circle-check fa-beat text-sm pb-5 mr-4 tablet:ml-2 tablet:mt-1 laptop:mt-2.5 text-primary-navy"></i>Síndrome do Pânico</li>
+              </div>
+              <div>
+                <img src="src/img/autoconhecimento.min.svg" alt="" class="w-80 h-60">
+                <li class="py-1 tablet:flex justify-self-center text-center justify-center"><i class="fa-regular fa-circle-check fa-beat text-sm pb-5 mr-4 tablet:ml-2 tablet:mt-1 laptop:mt-2.5 text-primary-navy"></i>Autoconhecimento</li>
+              </div>
+              <div>
+                <img src="src/img/burnout.svg" alt="" class="w-80 h-60">
+                <li class="py-1 tablet:flex justify-self-center text-center justify-center"><i class="fa-regular fa-circle-check fa-beat text-sm pb-5 mr-4 tablet:ml-2 tablet:mt-1 laptop:mt-2.5 text-primary-navy"></i>Burnout</li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div> <!--container especialidades-->
+    </div> <!-- bg especialidades container-->
+
+    <div id="depoimentos" class="pt-20"> <!-- container depoimentos-->
+      <div>
+        <div class="font-primary-title text-3xl  tablet:text-6xl text-center mb-20 relative">
+          <h2 class="">Depoimentos</h2>
+        </div>
+        <div class="pt-4 mt-4 h-12 w-12 border-1 border-primary-navy rounded-full text-center mx-auto ">
+          <span><i class="fa-solid fa-quote-left fa-bounce"></i></span>
+        </div>
+        <div class="slider-testimonial max-w-60% mx-auto font-serif italic text-lg laptop:text-xl">
+          <div class="pt-8 text-center">
+            <p>Excelente profissional, muito competente e me ajudou muito a superar traumas antigos que prejudicavam o meu cotidiano.</p>
+            <p class="mt-3 not-italic">- R</p>
+            <span class="flex justify-center mt-4">
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+            </span>
+          </div>
+          <div class="pt-8 text-center">
+            <p>Me senti muito acolhido, me ajudou muito a superar dificuldades que eu não conseguiria sozinho!</p>
+            <p class="mt-3 not-italic">- L</p>
+            <span class="flex justify-center mt-4">
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+            </span>
+          </div>
+          <div class="pt-8 text-center">
+            <p>Para mim, o autoconhecimento que adquiri durante o meu percurso na terapia com esse profissional foi o mais importante, muito grato!</p>
+            <p class="mt-3 not-italic">- P</p>
+            <span class="flex justify-center mt-4">
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+              <i class="px-1 fa-solid fa-star text-primary-darkblue" ></i>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="duvidas" class="bg-primary-darkblue"> <!-- duvidas bg container -->
+      <div class="mt-20 desktop:mt-40 max-w-80% mx-auto laptop:px-5 py-20 text-center  text-primary-white"> <!--container duvidas-->
+        <div>
+          <div class="font-primary-sans text-3xl mb-20 relative inline-block">
+            <h1>Dúvidas Frequentes</h1>
+            <hr class="w-20% mx-24 border-2 border-primary-white mt-8 rounded-full">
+          </div>
+          <dl class="font-primary-serif font-medium tracking-widecustom text-lg js-accordion">
+            <div class="laptop:max-w-1/2 bg-primary-questionBox mx-auto rounded-lg text-primary-darkblue  text-justify ">
+              <dt class="text-center flex justify-between bg-primary-questionBox hover:bg-primary-hover-questionBox px-5 laptop:px-7 rounded-md cursor-pointer w-full mx-auto p-3">Qual o valor da consulta?<span><i class="ml-2 mt-1 laptop:ml-5 fa-solid fa-turn-down fa-sm fa-bounce text-primary-darkblue"></i></span></dt>
+              <dd class="text-primary-night hidden mt-4 px-5 laptop:px-7 pb-3">O Conselho Federal de Psicologia orienta que a divulgação de valores não seja realizada, mas estou à disposição para fornecer todas as informações necessárias e esclarecer qualquer dúvida que você possa ter sobre esse aspecto. Sinta-se à vontade para entrar em contato comigo, via WhatsApp, <span class="font-bold"><a class="hover-line" href="">clicando aqui</a>.</span>
+            </div>
+            <div class="mt-10 laptop:laptop:max-w-1/2 bg-primary-questionBox mx-auto rounded-lg text-primary-darkblue  text-justify ">
+              <dt class="text-center flex justify-between bg-primary-questionBox hover:bg-primary-hover-questionBox px-5 laptop:px-7 rounded-md cursor-pointer w-full mx-auto p-3">Como eu sei se devo fazer Terapia?<span><i class="ml-2 mt-1 laptop:ml-5 fa-solid fa-turn-down fa-sm fa-bounce text-primary-darkblue"></i></span></dt>
+              <dd class="text-primary-night hidden mt-4 px-5 laptop:px-7 pb-3">O Conselho Federal de Psicologia orienta que a divulgação de valores não seja realizada, mas estou à disposição para fornecer todas as informações necessárias e esclarecer qualquer dúvida que você possa ter sobre esse aspecto. Sinta-se à vontade para entrar em contato comigo, via WhatsApp, <span class="font-bold"><a class="hover-line" href="">clicando aqui</a>.</span>
+            </div>
+            <div class="mt-10 laptop:max-w-1/2 bg-primary-questionBox mx-auto rounded-lg text-primary-darkblue  text-justify ">
+              <dt class="text-center flex justify-between bg-primary-questionBox hover:bg-primary-hover-questionBox px-5 laptop:px-7 rounded-md cursor-pointer w-full mx-auto p-3">Terapia Online funciona?<span><i class="ml-2 mt-1 laptop:ml-5 fa-solid fa-turn-down fa-sm fa-bounce text-primary-darkblue"></i></span></dt>
+              <dd class="text-primary-night hidden mt-4 px-5 laptop:px-7 pb-3">As pesquisas mais recentes mostram que 85% das pessoas preferem a terapia online ou a acham tão boa quanto a presencial. Segundo o Conselho Federal de Psicologia, o acompanhamento online possui a mesma eficácia do acompanhamento presencial, além de apresentar comodidades, como não exigir deslocamentos. Sinta-se à vontade para entrar em contato comigo, via WhatsApp, <span class="font-bold"><a class="hover-line" href="">clicando aqui</a>.</span>
+            </div>
+            <div class="mt-10 laptop:max-w-1/2 bg-primary-questionBox mx-auto rounded-lg text-primary-darkblue  text-justify ">
+              <dt class="text-center flex justify-between bg-primary-questionBox hover:bg-primary-hover-questionBox px-5 laptop:px-7 rounded-md cursor-pointer w-full mx-auto p-3">Como funciona a Terapia Online?<span><i class="ml-2 mt-1 laptop:ml-5 fa-solid fa-turn-down fa-sm fa-bounce text-primary-darkblue"></i></span></dt>
+              <dd class="text-primary-night hidden mt-4 px-5 laptop:px-7 pb-3">O Conselho Federal de Psicologia orienta que a divulgação de valores não seja realizada, mas estou à disposição para fornecer todas as informações necessárias e esclarecer qualquer dúvida que você possa ter sobre esse aspecto. Sinta-se à vontade para entrar em contato comigo, via WhatsApp, <span class="font-bold"><a class="hover-line" href="">clicando aqui</a>.</span>
+            </div>
+            <div class="mt-10 laptop:max-w-1/2 bg-primary-questionBox mx-auto rounded-lg text-primary-darkblue  text-justify ">
+              <dt class="text-center flex justify-between bg-primary-questionBox hover:bg-primary-hover-questionBox px-5 laptop:px-7 rounded-md cursor-pointer w-full mx-auto p-3">Possui convênio ou plano de saúde?<span><i class="ml-2 mt-1 laptop:ml-5 fa-solid fa-turn-down fa-sm fa-bounce text-primary-darkblue"></i></span></dt>
+              <dd class="text-primary-night hidden mt-4 px-5 laptop:px-7 pb-3">Os atendimentos são realizados apenas na modalidade particular, os pacientes que possuem plano de saúde podem solicitar o reembolso do valor com o seu plano mediante apresentação do recibo. Sinta-se à vontade para entrar em contato comigo, via WhatsApp, <span class="font-bold"><a class="hover-line" href="">clicando aqui</a>.</span>
+            </div>
+            <div class="mt-10 laptop:max-w-1/2 bg-primary-questionBox mx-auto rounded-lg text-primary-darkblue  text-justify ">
+              <dt class="text-center flex justify-between bg-primary-questionBox hover:bg-primary-hover-questionBox px-5 laptop:px-7 rounded-md cursor-pointer w-full mx-auto p-3">Posso remarcar minhas consultas?<span><i class="ml-2 mt-1 laptop:ml-5 fa-solid fa-turn-down fa-sm fa-bounce text-primary-darkblue"></i></span></dt>
+              <dd class="text-primary-night hidden mt-4 px-5 laptop:px-7 pb-3">O Conselho Federal de Psicologia orienta que a divulgação de valores não seja realizada, mas estou à disposição para fornecer todas as informações necessárias e esclarecer qualquer dúvida que você possa ter sobre esse aspecto. Sinta-se à vontade para entrar em contato comigo, via WhatsApp, <span class="font-bold"><a class="hover-line" href="">clicando aqui</a>.</span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="text-center -ml-5 bg-primary-darkblue pb-17">
+    <button class="px-5 py-4 text-2xl btn-grow rounded-full bg-primary-sky  z-40 relative inline-block font-sans hover:bg-primary-grape hover:text-primary-white transition duration-500 font-medium border-1 border-black border-opacity-20 drop-shadow-xl">
+      <a href="https://wa.me/5517981092958?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta.">Mais alguma dúvida?<i class="fa-brands fa-whatsapp fa-shake ml-3"></i></a>
+    </button>
+  </div>
+  <div class="h-2 w-full bg-gradient-to-b from-primary-darkblue to-primary-night"></div> 
+  <footer class="bg-primary-night font-primary-serif text-primary-white laptop:text-xl py-17">
+    <div class="max-w-80% mx-auto">
+      <div class="flex justify-around flex-col laptop:flex-row max-w-1080px mx-auto">
+        <div class="flex flex-col">
+          <h2 class="text-3xl mb-2 font-medium">Informações de Contato</h2>
+          <ul>
+            <li class="mt-1 btn-grow-mobile laptop:btn-grow transition duration-300 text-white hover:text-green-500">
+              <a class="hover-line" href="#"><span class="mr-2"><i class="fa-brands fa-whatsapp fa-lg"></i></span>
+              (99) 99999-9999</a>
+            </li>
+            <li class="mt-1 btn-grow-mobile laptop:btn-grow transition duration-300 text-white hover:text-purple-400">
+             <a class="hover-line" href="#"><span class="mr-2"><i class="fa-brands fa-instagram fa-lg"></i></span>
+              @psicologo</a>
+            </li>
+            <li class="mt-1 btn-grow-mobile laptop:btn-grow transition duration-300 text-white hover:text-blue-500">
+              <a class="hover-line" href="#"><span class="mr-2"><i class="fa-brands fa-facebook-f fa-lg"></i></span>
+              /psicologo.consulta</a>
+            </li>
+            <li class="mt-2 text-white">
+              <span class="mr-2"><i class="fa-regular fa-clock fa-lg"></i></span>
+              <p class="inline">Segunda a Sexta, das 9h às 21h</p>
+            </li>
+          </ul>
+        </div>
+        <div class="flex mt-17 laptop:mt-0 justify-center">
+          <div class="flex items-center">
+            <div class="block tablet:mx-auto tablet:flex-grow laptop:flex-grow-0 laptop:mx-0 laptop:mr-0">
+              <div class="mr-2 inline-block">
+                <img class="inline-block max-w-40px h-auto" src="./src/img/psychology.png" alt="">
+              </div>
+            </div>
+            <div class="text-center mx-0 tablet:flex-grow laptop:ml-0 laptop:mr-10 laptop:flex-grow-0">
+              <h1 class="font-primary-title text-3xl tablet:text-4xl font-bold uppercase tracking-tighter">Heitor Lemos</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="w-20% mx-auto border-1 border-primary-white mt-12 rounded-full">
+      <div class="mt-2 text-xs tracking-widecustom mx-auto w-90%">
+        <div class="py-6 text-center">
+          <p>Desenvolvido por BlackSage <span class="text-3xl">&#174;</span></p>
+        </div>
+        <div>
+          <p class="text-center">Copyright &copy; 2023. Todos os Direitos Reservados</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <a class="whatsapp-btn btn-grow-mobile laptop:btn-grow hover:bg-emerald-800 transition duration-500" href="https://wa.me/5517981092958?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta." target="_blank">
+  <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="src/scripts/script.js"></script>  
+</body>
+</html>
